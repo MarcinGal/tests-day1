@@ -1,4 +1,3 @@
-import { orderTotal } from './index'
 import { orderTotal, fetchOrderAndCalculateTotal } from './orderTotal'
 import { mockedFetch } from './mockedFetch'
 
