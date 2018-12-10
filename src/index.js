@@ -18,3 +18,9 @@ export const orderTotal = (arrayOfOrders) => {
             preTotal
     )
 }
+
+export const fetchOrderAndCalculateTotal = () => (
+    fetch('https://ad-snadbox.firebaseio.com/jfddl6/orders.json')
+    .then(r => r.json())
+    .then(data => orderTotal(data))
+)
